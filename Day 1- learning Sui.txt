@@ -1,0 +1,58 @@
+I'm studying sui from it's official website - www.sui.io
+
+6/2/26
+
+Day 1 of Learning Sui
+
+1. Sui is a layer 1 blockchain network that works by viewing every component - assests,data, permissions as objects which can be owned,versioned or composed.
+The website says: "Sui is a scalable and performant layer-1 blockchain that is home to a complete stack of native primitives ideal for building decentralized applications."
+
+Sui is different from other chains because it uses an object-centric model, i. every item on the network is an object and each object has a unique on-chain ID.
+
+2. To build with sui, I installed the sui CLI using suiup. Suiup is an installation package that allows for easily installing and switching between different versions sui stack components.
+
+Install suiup -> install sui -> confirm installation (sui 1.65.1-75515e79e182-dirty)
+
+3. The sui client - client.yaml contains the configuration for connecting to different Sui networks (Testnet
+ Mainnet
+ Devnet
+ and Localnet
+ as well as your current active environment, which tells the CLI which network to use when you don't explicitly specify one.
+
+4. Sui addresses: $ sui client active-address
+[warning] Client/Server api version mismatch, client api version : 1.65.1, server api version : 1.65.0
+0xbb25ee4147cc88b431a15ffafdb546a1d418c19e490eedefeabe187bfad41e4b
+
+5. Sui address is a unique 32-byte identifier that appears in a hexadecimal encoding with '0x' prefix.
+
+6. Programs are created on Sui by writing and deploying smart contracts to the network.
+
+7. Move is the programming language Sui uses to create smart contracts.
+
+Day 2 of learning Sui
+
+Here are some terms I came across while going through the sui documentation on their website. I want to build a solid mental map so I prompted gemini to explain these concepts to me.
+The Trade-offs
+"Businesses and users trade trust, security, and composability for convenience"
+In traditional apps (like Facebook or Uber), you give up control (trust) and the ability to easily move your data to other apps (composability) because those apps are easy to use (convenience). On Sui, the goal is to give you that security back without making the app feel like a chore to use.
+
+Tech Foundations
+ * Black Box Operations: Think of a restaurant kitchen where you can’t see inside. You give them an order (input), and food comes out (output), but you have no idea how it was made or if they dropped it on the floor. In tech, it’s code where the inner workings are hidden from the user.
+ * Siloed Data: Data that is "stuck" in one place. Your Instagram followers are siloed; you can’t automatically take that same list and use it inside a different app like LinkedIn.
+ * SDK (Software Development Kit): A "starter kit" for builders. It’s a collection of tools, libraries, and code snippets that makes it easier to write apps for a specific platform (like the Sui TypeScript SDK).
+ * CLI (Command Line Interface): The "hacker screen." Instead of clicking buttons on a website, you type text commands into a terminal to talk directly to your computer or the Sui network.
+ * Sui Client: This is the tool (often part of the CLI or SDK) that acts as the bridge. It’s the "messenger" that takes your request from your laptop and delivers it to the Sui network.
+
+Sui Specifics
+ * Examples of Assets: Anything you own! A Token (SUI), an NFT (a sword in a game), or even a Domain Name.
+ * Native Primitives: These are the "Lego bricks" built directly into the Sui language. Instead of having to "teach" the blockchain what a "Coin" or an "Address" is, Sui already knows what they are by default.
+Objects vs. Key-Value Stores
+ * Key-Value Store: Think of a giant spreadsheet. To find your balance, the system has to look up your "Key" (Account Name) to find the "Value" ($100).
+ * Object: Think of a physical wallet. The money isn't just a number in a spreadsheet; it is a digital "thing" (an object) that exists independently.
+ * How Sui did it: In Move (Sui's language), every piece of data is wrapped in a "container" that has a unique ID. This makes every item a standalone "Object" that can be moved, owned, or shared.
+Programming in Move
+ * Module: A file where you write your code. Think of it as a "Chapter" in a book that contains all the rules for a specific feature (like a "Currency" module).
+ * Public Struct: * Struct: A custom data shape (e.g., a "Car" struct might have "color" and "speed").
+   * Public: This means other modules are allowed to see or use this data shape.
+ * API Call: When one piece of software "calls" another to ask for information. Like your weather app "calling" a satellite's server to ask, "Is it raining?"
+ * Building a Move Package: This is the "compiling" phase. You take the code you wrote (which is readable by humans) and turn it into a "Package" (which is readable by the blockchain) so it can be uploaded and used.
