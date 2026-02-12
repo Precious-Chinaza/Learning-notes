@@ -44,8 +44,9 @@ Tech Foundations
  * Sui Client: This is the tool (often part of the CLI or SDK) that acts as the bridge. It’s the "messenger" that takes your request from your laptop and delivers it to the Sui network.
 
 Sui Specifics
- * Examples of Assets: Anything you own! A Token (SUI), an NFT (a sword in a game), or even a Domain Name.
+ * Examples of Assets: A Token (SUI), an NFT (e.g a sword in a game), or even a Domain Name.
  * Native Primitives: These are the "Lego bricks" built directly into the Sui language. Instead of having to "teach" the blockchain what a "Coin" or an "Address" is, Sui already knows what they are by default.
+
 Objects vs. Key-Value Stores
  * Key-Value Store: Think of a giant spreadsheet. To find your balance, the system has to look up your "Key" (Account Name) to find the "Value" ($100).
  * Object: Think of a physical wallet. The money isn't just a number in a spreadsheet; it is a digital "thing" (an object) that exists independently.
@@ -56,3 +57,29 @@ Programming in Move
    * Public: This means other modules are allowed to see or use this data shape.
  * API Call: When one piece of software "calls" another to ask for information. Like your weather app "calling" a satellite's server to ask, "Is it raining?"
  * Building a Move Package: This is the "compiling" phase. You take the code you wrote (which is readable by humans) and turn it into a "Package" (which is readable by the blockchain) so it can be uploaded and used.
+
+Day 3...
+
+
+1. Permissionless Layer 1 Blockchain
+ * Layer 1 (The Foundation): This is the base-level blockchain (like Sui, Ethereum, or Bitcoin). It doesn't sit on top of another network; it is the network.
+ * Permissionless (No Gatekeepers): This means anyone, anywhere, can use it without asking for an "invite."
+   * You don't need to sign up with an email.
+   * You don't need a background check.
+   * You just generate a wallet key and start transacting.
+
+ The Big Idea: On a permissioned chain (like a bank’s internal ledger), the bank can say "No" to you. On a permissionless chain like Sui, the code is the only judge.
+
+2. Series-B Funding
+In the startup world, companies raise money in "rounds" as they grow. Series-B is like the "Scaling Phase."
+ * Seed Round: "I have a cool idea and a prototype."
+ * Series-A: "I have a working product and some customers."
+ * Series-B: "The product works, the business model is proven, and now I need $20M–$50M+ to hire 100 people and take over the market."
+When you hear a Sui-based company (like Mysten Labs) raised a Series-B, it means big investors believe the company is past the "experimental" stage and is now ready to become a giant.
+
+3. How is Web3 Infrastructure currently? (The 2026 Reality)
+The "honeymoon phase" of pure hype is over. We are currently in the "Utility Era." Here is the vibe check for 2026:
+ * From Theory to Reality: In 2022, people talked about "what could happen." In 2026, we are seeing Real-World Assets (RWA)—like houses, cars, and treasury bonds—being put onto blockchains like Sui to make trading them faster.
+ * The "Invisible" Tech: The best apps now hide the blockchain. You might use a game or a social app where you don't even realize you're using "Sui" until you look under the hood. This is thanks to Account Abstraction (using an email/Google login instead of a 24-word seed phrase).
+ * Scalability Solved (Mostly): Older chains were slow and expensive (like a crowded highway). New infrastructure, especially Sui’s "object-based" model, has made transactions almost instant and nearly free, which was the biggest hurdle a few years ago.
+ * Regulatory Clarity: Governments have finally caught up. It’s less like the "Wild West" now and more like a regulated industry, which makes big companies (like Nike or Starbucks) feel safe building here.
